@@ -1,0 +1,46 @@
+code: my_page_template # The page template identification
+description:  Basic page template # The page template description
+
+titles: # my_page_template's titles
+  en: my_page_template # Title in English
+  it: il_mio_modello # Title in Italian
+
+# The page template configuration
+configuration:
+  frames: # All frames
+    - pos: 0 # Frame position
+      description: Header # Frame description
+      sketch: # Frame sketch configuration
+        x1: 0
+        y1: 0
+        x2: 11
+        y2: 0
+      defaultWidget:
+        code: my_widget-90016491 # The widget code to apply when using the button "apply default widgets" in the page configuration UI
+
+    # A simplified way to define frames
+    - pos: 1
+      description: Breadcrumb
+      sketch: { x1: 0, y1: 1, x2: 11, y2: 1 }
+
+# Optional. Define the page template in a separate file or inside the descriptor file with `template`
+templatePath:
+
+# Optional. Define the page template as below or in a separate file with `templatePath`
+template: >-
+  <#assign wp=JspTaglibs["/aps-core"]>
+  <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">
+  <html>
+      <head>
+          <title><@wp.currentPage param="title" /></title>
+      </head>
+      <body>
+          <h1><@wp.currentPage param="title" /></h1>
+          <a href="<@wp.url page="homepage"/>">Home</a><br>
+          <div>
+              <h1>Bundle 1 Page Template</h1>
+              <@wp.show frame=0 />
+              <@wp.show frame=1 />
+          </div>
+      </body>
+  </html>

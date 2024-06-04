@@ -1,0 +1,16 @@
+id: 8880003
+contentType: BVT
+description: My content model
+
+# Optional. Define the content template shape in a separate file or inside the descriptor file with `contentShape`
+contentShapePath:
+
+# Optional. Define the content template shape as shown below or in a separate file with `contentShapePath`
+contentShape: >-
+  <article>
+    <h1>$content.Title.text</h1>
+    <h2>Demo content template</h2>
+    #if ( $content.MainBody.text != "" )
+    $content.MainBody.text
+    #end
+  </article>

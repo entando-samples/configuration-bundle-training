@@ -1,0 +1,49 @@
+id: BVT677
+typeCode: BVT
+description: BVT content brought by the bundle
+mainGroup: free
+groups:
+  - free
+status: PUBLIC
+attributes:
+#  - code: date
+#    value: '2020-04-23 00:00:00' # the date should be in ISO-8601 format
+  - code: subtitle
+    values:
+      en: |
+        <p>subtitle</p>
+  - code: title
+    values:
+      en: Dealing with a financial emergency
+  - code: descr
+    values:
+      en: |
+        <p>description</p>
+#  - code: body
+#    values:
+#      en: |
+#        <p>Body</p>
+  - code: img
+    values:
+      en:
+        correlationCode: 'htmlCode'
+        name: guy.jpg
+  - code: links
+    elements:
+      - code: links
+        value:
+          symbolicDestination: '#!U;http://www.yoursite.com/!#'
+          destType: 1
+          urlDest: 'http://www.yoursite.com/'
+          pageDest: null
+          contentDest: null
+          resourceDest: null
+        values:
+          en: vostro sito
+      - code: links
+        value:
+          symbolicDestination: '#!U;http://www.yoursite.com/!#'
+          destType: 1
+          urlDest: 'http://www.yoursite.com/'
+        values:
+          en: vostro sito 2

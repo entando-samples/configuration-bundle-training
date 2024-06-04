@@ -1,0 +1,9 @@
+{
+    "microservices": [],
+    "microfrontends": [],
+    "svc": [],
+    "name": "bvtech-bundle",
+    "version": "0.0.18",
+    "description": "human description",
+    "type": "bundle"
+}
