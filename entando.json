@@ -3,7 +3,7 @@
     "microfrontends": [],
     "svc": [],
     "name": "bvtech-bundle",
-    "version": "0.0.18",
+    "version": "0.0.19",
     "description": "human description",
     "type": "bundle"
 }

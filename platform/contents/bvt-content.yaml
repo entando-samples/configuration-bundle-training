@@ -19,10 +19,6 @@ attributes:
     values:
       en: |
         <p>description</p>
-#  - code: body
-#    values:
-#      en: |
-#        <p>Body</p>
   - code: img
     values:
       en:
